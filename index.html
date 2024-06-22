@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diastolic Function Worksheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diastolic Function Worksheet</h1>
+        <form id="diastolic-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="eWave">E Wave Velocity (cm/s):</label>
+                <input type="number" id="eWave" required>
+            </div>
+            <div class="form-group">
+                <label for="aWave">A Wave Velocity (cm/s):</label>
+                <input type="number" id="aWave" required>
+            </div>
+            <div class="form-group">
+                <label for="ePrime">E' Velocity (cm/s):</label>
+                <input type="number" id="ePrime" required>
+            </div>
+            <button type="submit">Evaluate</button>
+        </form>
+        <div id="report" class="report">
+            <!-- Report will be generated here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
