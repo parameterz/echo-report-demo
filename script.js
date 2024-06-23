@@ -19,8 +19,8 @@ async function submitForm(event) {
         E Wave Velocity: ${data.eWave.toFixed(2)} cm/s
         A Wave Velocity: ${data.aWave.toFixed(2)} cm/s
         E' Velocity: ${data.ePrime.toFixed(2)} cm/s
-        E/A Ratio: ${data.eARatio.toFixed(2)}
-        E/e\' Ratio: ${data.eePrimeRatio}
+        E/A Ratio: ${data.eaRatio.toFixed(1)}
+        E/e\' Ratio: ${data.eePrimeRatio.toFixed(1)}
 
         Conclusion: ${data.conclusion}
     `;
