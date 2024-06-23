@@ -6,22 +6,30 @@ def lambda_handler(event, context):
         e_wave = float(body['eWave'])
         a_wave = float(body['aWave'])
         e_prime = float(body['ePrime'])
-        
-        # Example calculation logic
-        report = f"Diastolic Function Report:\n\n"
-        report += f"E Wave Velocity: {e_wave} cm/s\n"
-        report += f"A Wave Velocity: {a_wave} cm/s\n"
-        report += f"E' Velocity: {e_prime} cm/s\n\n"
+
+        # Calculate ratios
+        ea_ratio = e_wave / a_wave
+        eeprime_ratio = e_wave / e_prime
 
         # Sample evaluation logic (to be replaced with actual algorithm)
-        if e_wave / e_prime > 14:
-            report += "Conclusion: Impaired diastolic function with elevated filling pressures."
+        if eeprime_ratio > 14:
+            conclusion = "Conclusion: Impaired diastolic function with elevated filling pressures."
         else:
-            report += "Conclusion: Normal diastolic function."
+            conclusion = "Conclusion: Normal diastolic function."
+
+        # Construct the response data
+        response_data = {
+            'eWave': e_wave,
+            'aWave': a_wave,
+            'ePrime': e_prime,
+            'eaRatio': ea_ratio,
+            'eePrimeRatio': eeprime_ratio,
+            'conclusion': conclusion
+        }
 
         return {
             'statusCode': 200,
-            'body': json.dumps({'report': report}),
+            'body': json.dumps(response_data),
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',

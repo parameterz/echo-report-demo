@@ -12,6 +12,17 @@ async function submitForm(event) {
         body: JSON.stringify({ eWave, aWave, ePrime }),
     });
 
-    const result = await response.json();
-    document.getElementById('report').innerText = result.report;
+    const data = await response.json();
+    const report = `
+        Diastolic Function Report:
+
+        E Wave Velocity: ${data.eWave.toFixed(2)} cm/s
+        A Wave Velocity: ${data.aWave.toFixed(2)} cm/s
+        E' Velocity: ${data.ePrime.toFixed(2)} cm/s
+        E/A Ratio: ${data.eARatio.toFixed(2)}
+        E/e\' Ratio: ${data.eePrimeRatio}
+
+        Conclusion: ${data.conclusion}
+    `;
+    document.getElementById('report').innerText = report;
 }
