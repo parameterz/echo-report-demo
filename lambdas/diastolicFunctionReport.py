@@ -13,9 +13,9 @@ def lambda_handler(event, context):
 
         # Sample evaluation logic (to be replaced with actual algorithm)
         if eeprime_ratio > 14:
-            conclusion = "Conclusion: Impaired diastolic function with elevated filling pressures."
+            conclusion = "Impaired diastolic function with elevated filling pressures."
         else:
-            conclusion = "Conclusion: Normal diastolic function."
+            conclusion = "Normal diastolic function."
 
         # Construct the response data
         response_data = {
