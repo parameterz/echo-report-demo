@@ -16,9 +16,9 @@ async function submitForm(event) {
     const report = `
         Diastolic Function Report:
 
-        E Wave Velocity: ${data.eWave.toFixed(2)} cm/s
-        A Wave Velocity: ${data.aWave.toFixed(2)} cm/s
-        E' Velocity: ${data.ePrime.toFixed(2)} cm/s
+        E Wave Velocity: ${data.eWave.toFixed(0)} cm/s
+        A Wave Velocity: ${data.aWave.toFixed(0)} cm/s
+        E' Velocity: ${data.ePrime.toFixed(0)} cm/s
         E/A Ratio: ${data.eaRatio.toFixed(1)}
         E/e\' Ratio: ${data.eePrimeRatio.toFixed(1)}
 
