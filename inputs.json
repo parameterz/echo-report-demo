@@ -1,0 +1,158 @@
+[
+    {
+      "name": "age",
+      "id": "age",
+      "type": "number",
+      "label": "Age (yrs)"
+    },
+    {
+      "name": "ht",
+      "id": "ht",
+      "type": "number",
+      "label": "Height (cm)"
+    },
+    {
+      "name": "wt",
+      "id": "wt",
+      "type": "number",
+      "label": "Weight (kg)"
+    },
+    {
+      "name": "gender",
+      "id": "gender",
+      "type": "text",
+      "label": "Gender (M/F)"
+    },
+    {
+      "name": "mv_e",
+      "id": "mv_e",
+      "type": "number",
+      "label": "MV E velocity (cm/s)"
+    },
+    {
+      "name": "mv_e_decel",
+      "id": "mv_e_decel",
+      "type": "number",
+      "label": "MV E decel time (ms)"
+    },
+    {
+      "name": "mv_a",
+      "id": "mv_a",
+      "type": "number",
+      "label": "MV A velocity (cm/s)"
+    },
+    {
+      "name": "mv_a_dur",
+      "id": "mv_a_dur",
+      "type": "number",
+      "label": "MV A duration (ms)"
+    },
+    {
+      "name": "mv_l",
+      "id": "mv_l",
+      "type": "number",
+      "label": "MV L velocity (cm/s)"
+    },
+    {
+      "name": "lateral_e",
+      "id": "lateral_e",
+      "type": "number",
+      "label": "MV  Lateral e' velocity (cm/s)"
+    },
+    {
+      "name": "lateral_a",
+      "id": "lateral_a",
+      "type": "number",
+      "label": "MV  Lateral a' velocity (cm/s)"
+    },
+    {
+      "name": "medial_e",
+      "id": "medial_e",
+      "type": "number",
+      "label": "MV Medial e' velocity (cm/s)"
+    },
+    {
+      "name": "medial_a",
+      "id": "medial_a",
+      "type": "number",
+      "label": "MV Medial a' velocity (cm/s)"
+    },
+    {
+      "name": "pvn_s",
+      "id": "pvn_s",
+      "type": "number",
+      "label": "Pulmonary Vein S velocity (cm/s)"
+    },
+    {
+      "name": "pvn_d",
+      "id": "pvn_d",
+      "type": "number",
+      "label": "Pulmonary Vein D velocity (cm/s)"
+    },
+    {
+      "name": "pvn_a",
+      "id": "pvn_a",
+      "type": "number",
+      "label": "Pulmonary Vein Ar velocity (cm/s)"
+    },
+    {
+      "name": "pvn_a_dur",
+      "id": "pvn_a_dur",
+      "type": "number",
+      "label": "Pulmonary Vein Ar duration (ms)"
+    },
+    {
+      "name": "la_vol",
+      "id": "la_vol",
+      "type": "number",
+      "label": "Left Atrial volume (ml)"
+    },
+    {
+      "name": "lars",
+      "id": "lars",
+      "type": "number",
+      "label": "Left Atrial Reservoir Strain (%)"
+    },
+    {
+      "name": "lacs",
+      "id": "lacs",
+      "type": "number",
+      "label": "Left Atrial Conduit Strain (%)"
+    },
+    {
+      "name": "laps",
+      "id": "laps",
+      "type": "number",
+      "label": "Left Atrial Pump Strain (%)"
+    },
+    {
+      "name": "lv_ef",
+      "id": "lv_ef",
+      "type": "number",
+      "label": "Left Ventricular Ejection Fraction (%)"
+    },
+    {
+      "name": "tr_vel",
+      "id": "tr_vel",
+      "type": "number",
+      "label": "Tricuspid Regurgitation (TR) Velocity (m/s)"
+    },
+    {
+      "name": "cvp",
+      "id": "cvp",
+      "type": "number",
+      "label": "Central Venous Pressure (CVP) (mmHg)"
+    },
+    {
+      "name": "pi_pk_vel",
+      "id": "pi_pk_vel",
+      "type": "number",
+      "label": "Pulmonary Insufficiency Peak velocity (m/s)"
+    },
+    {
+      "name": "pi_ed_vel",
+      "id": "pi_ed_vel",
+      "type": "number",
+      "label": "Pulmonary Insufficiency End-Diastolic velocity (m/s)"
+    }
+  ]

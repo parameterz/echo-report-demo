@@ -15,7 +15,7 @@ def lambda_handler(event, context):
         if eeprime_ratio > 14:
             conclusion = "Impaired diastolic function with elevated filling pressures."
         elif eeprime_ratio > 10:
-            conclusion = f"Gray area; E/e' ratio is greater than 10 ({eeprime_ratio:.f})."
+            conclusion = f"Gray area; E/e' ratio is greater than 10 ({eeprime_ratio:.1f})."
         else:
             conclusion = "Normal diastolic function."
 
